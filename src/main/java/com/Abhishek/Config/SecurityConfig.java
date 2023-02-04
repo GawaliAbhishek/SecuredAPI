@@ -26,7 +26,8 @@ public class SecurityConfig {
       .anyRequest()
       .authenticated()
       .and()
-      .formLogin();
+      .formLogin()
+      .defaultSuccessUrl("/city/");
         
                 
         return httpSecurity.build();
